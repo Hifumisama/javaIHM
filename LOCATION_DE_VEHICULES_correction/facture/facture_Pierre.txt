@@ -1,0 +1,5 @@
+Facture: nom=Pierre, prenom=Jean, adresse=14 Gabriel peri, 75412 Paris
+|Exemplaire                 | |Debut      | |fin        | |Remise     | |Penalite  | |Carburant | |Reparation| |Prix      | |facture   | 
+|Toyota-Corola, 12000Km     | |26/12/2015 | |12/2/2016  | |null       | |0         | |0         | |0         | |13478     | |13478     |
+|Toyota-Corola, 62550Km     | |26/12/2015 | |12/2/2016  | |23/3/2016  | |744027    | |25        | |500       | |12098     | |756650    |
+                                                                                                        Total   25576        770128    

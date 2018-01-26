@@ -8,7 +8,7 @@ public abstract class Vehicule implements GestionVehicules {
 	
 	private int id;
 	private String marque;
-	private double prix;
+	protected double prix;
 	private ArrayList<Vehicule> listedeVoiture; // indiquer ici la liste des véhicules permettra de facilement ajouter les nouveaux véhicules à la liste.
 	private ArrayList<Exemplaire> Mesexemplaires; // contiendra la liste d'exemplaires qui existent concernant ce véhicule précis
 	
@@ -40,19 +40,13 @@ public abstract class Vehicule implements GestionVehicules {
 	
 	
 	@Override
-	public static void ajouterVehicule() {
-		
-		
-	}
+	public void ajouterVehicule() {}
 	
+	@Override 
+	public void rendre() {}
 	
-	
-	
-	
-	
-	
-	
-	
+	@Override
+	public void louer() {}
 	
 	
 	public int getId() {

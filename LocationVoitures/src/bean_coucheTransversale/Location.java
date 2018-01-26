@@ -7,9 +7,7 @@ import dao.Autos;
 
 public class Location implements GestionLocations {
 
-	
-
-	private int numeroLocation; // l'appeler plutot "id"
+	private int idLocation; // 
 		
 	/**
 	 *Represente la liste de toutes les locations  
@@ -28,26 +26,12 @@ public class Location implements GestionLocations {
 	private int dureePrevue;
 	private ArrayList<Vehicule> vehicules;
 	private ArrayList<Location> locations;
-
-	
-	
-	
-	
-
-	
-	
-	
 	
 	/**
 	 *Represente le client associé à la location 
 	 */
 	private Emprunteur emprunteur;
 
-	
-	
-	
-	
-	
 	/**
 	 * CONSTRUCTEUR PAR DEFAUT
 	 */
@@ -55,15 +39,22 @@ public class Location implements GestionLocations {
 		super();
 		}
 	
-	
-	
 	/**
 	 * CONSTRUCTEUR AVEC PARAMETRES
 	 */
-	public Location(int numeroLocation, ArrayList<Location> locations, Date dateDebutLocation, Date dateFinLocation,
-			Date dateRemise, Devis devis, Exemplaire exemplaire, Emprunteur emprunteur, ArrayList<Vehicule> vehicules) {
+	public Location(
+			int numeroLocation, 
+			ArrayList<Location> locations,
+			Date dateDebutLocation,
+			Date dateFinLocation,
+			Date dateRemise, 
+			Devis devis, 
+			Exemplaire exemplaire, 
+			Emprunteur emprunteur, 
+			ArrayList<Vehicule> vehicules
+			) {
 		super();
-		this.numeroLocation = numeroLocation;
+		this.idLocation = numeroLocation;
 		this.locations = locations;
 		this.dateDebutLocation = dateDebutLocation;
 		this.dateFinLocation = dateFinLocation;
@@ -79,16 +70,14 @@ public class Location implements GestionLocations {
 	
 	
 	@Override
-	public void dureeEffective() {
-		return dateRemise - dateDebutLocation
-	}
+	public void dureeEffective() {}
 	
+	@Override
+	public void calculPrixLocation() {}
 	
 	public int getNumeroLocation() {
-		return numeroLocation;
+		return idLocation;
 	}
-
-
 
 	public ArrayList<Location> getLocations() {
 		return locations;
@@ -119,7 +108,7 @@ public class Location implements GestionLocations {
 	}
 
 	public void setNumeroLocation(int numeroLocation) {
-		this.numeroLocation = numeroLocation;
+		this.idLocation = numeroLocation;
 	}
 
 	public void setLocations(ArrayList<Location> locations) {
@@ -149,17 +138,7 @@ public class Location implements GestionLocations {
 	public void setEmprunteur(Emprunteur emprunteur) {
 		this.emprunteur = emprunteur;
 	}
-	
 
-
-	
-	
-	
-	
 	// ajouter directement chaque nouvelle location à la liste des locations
-	
-	
-	
-
 	
 }

@@ -5,17 +5,13 @@ public class Auto extends Vehicule{
 	private String modele;
 	private boolean deluxe; 
 	
-	
 	/**
 	 * CONSTRUCTEUR PAR DEFAUT
 	 */
 	public Auto() {
 		super();
 	}
-	
-	
-	
-	
+
 	/**
 	 * CONSTRUCTEUR AVEC PARAMETRES
 	 */
@@ -25,9 +21,6 @@ public class Auto extends Vehicule{
 		this.prix = prix;
 		this.deluxe = deluxe;
 	}
-
-
-
 
 	public String getModele() {
 		return modele;
@@ -43,30 +36,16 @@ public class Auto extends Vehicule{
 		return deluxe;
 	}
 
-
-
-
 	public void setModele(String modele) {
 		this.modele = modele;
 	}
-
-
-
 
 	public void setPrix(double prix) {
 		this.prix = prix;
 	}
 
-
-
-
 	public void setDeluxe(boolean deluxe) {
 		this.deluxe = deluxe;
-	}
-
-
-
-
-	
+	}	
 	
 }

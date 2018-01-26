@@ -1,0 +1,5 @@
+Facture: nom=Moussa, prenom=Sissoko, adresse=45 foret, 65412 Lyon
+|Exemplaire                 | |Debut      | |fin        | |Remise     | |Penalite  | |Carburant | |Reparation| |Prix      | |facture   | 
+|Peugeuot-407, 12000Km      | |26/12/2015 | |12/2/2016  | |null       | |0         | |0         | |0         | |15732     | |15732     |
+|Range-Rover, 62550Km       | |26/12/2015 | |12/2/2016  | |23/3/2016  | |990150    | |100       | |300       | |16100     | |1006650   |
+                                                                                                        Total   31832        1022382   

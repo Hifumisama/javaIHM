@@ -44,22 +44,6 @@ public class Devis implements GestionLocations {
 		this.reparation = reparation;
 	}
 
-	
-	@Override
-	public void calculPrixLocation() {
-		Auto a = new Auto();
-		ArrayList<Auto> listeAutos = new ArrayList<Auto>();
-		
-		for (Auto : listeAutos) {
-
-			if (a.getPrix() > 35000 && a.isDeluxe()) {
-				this.prix = 450;
-			} else {
-				this.prix = 250;
-			}
-		}
-	}
-
 	public Location getLocation() {
 		return location;
 	}
@@ -106,6 +90,23 @@ public class Devis implements GestionLocations {
 
 	public void setReparation(int reparation) {
 		this.reparation = reparation;
+	}
+
+	@Override
+	public void dureeEffective() {}
+
+
+	public void calculPrixLocation() {
+		ArrayList<Auto> listeAutos = new ArrayList<Auto>();
+
+		for(Auto autoItem: listeAutos) {
+
+			if (autoItem.getPrix() > 35000 && autoItem.isDeluxe()) {
+				this.prix = 450;
+			} else {
+				this.prix = 250;
+			}
+		}
 	}
 
 }

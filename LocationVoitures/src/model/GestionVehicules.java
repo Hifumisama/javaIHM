@@ -3,8 +3,7 @@ package model;
 public interface GestionVehicules {
 
 	// creer methode ajouter Auto
-	public static void ajouterVehicule();
-	
+	public void ajouterVehicule();
 	
 	public void louer();
 	

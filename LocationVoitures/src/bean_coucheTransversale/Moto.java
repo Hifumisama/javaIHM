@@ -6,14 +6,14 @@ public class Moto extends Vehicule {
 	private int roues;
 	private float poids;
 	private String conducteur;
-	
+
 	/**
 	 * CONSTRUCTEUR PAR DEFAUT
 	 */
 	public Moto() {
-		
+
 	}
-	
+
 	/**
 	 * CONSTRUCTEUR AVEC PARAMETRES
 	 */
@@ -24,46 +24,33 @@ public class Moto extends Vehicule {
 		this.roues = roues;
 		this.poids = poids;
 	}
-	
-	
+
+
 	// METHODES
-	
+	public String ToString() {
 
-	
+		return "roues =  " + roues 
+				+ " poids = " + poids 
+				+ " conducteur : " + conducteur 
+				+ " cylindree : " + cylindree;
+	}
 
-	
 
-	 public String ToString() {
-		 
-		 return "roues =  " + roues 
-				 + " poids = " + poids 
-				 + " conducteur : " + conducteur 
-				 + " cylindree : " + cylindree;
-	 }
-	 
-	 
-	 public void rendre() {
-		 
-	 };
-	 
-	 
-	 
-		public void louer() {
-			
-		};
+	public void rendre() {
+
+	};
+
+	public void louer() {
+
+	};
+	
+	public void ajouterVehicule() {
 		
-	
-	 
-	
+	};
+
 	// main
-	
 
-
-	
-	
-	
-
-	 // getters setters
+	// getters setters
 
 	public int getCylindree() {
 		return cylindree;
@@ -103,7 +90,7 @@ public class Moto extends Vehicule {
 	public void setConducteur(String conducteur) {
 		this.conducteur = conducteur;
 	}
-	
+
 }
 
 
